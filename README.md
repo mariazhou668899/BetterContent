@@ -12,7 +12,7 @@ Better Content is a cross-platform mobile application available on both iOS and 
 
 ## Downloading the Source Code
 
-1. Download the source code from: [Source Code](https://github.com/mariazhou668899/LoveStoryingFinalTest/tree/testQuiz)
+1. Download the source code from: [Source Code](https://github.com/mariazhou668899/BetterContent.git)
 
 ## Setting Up Backend
 
