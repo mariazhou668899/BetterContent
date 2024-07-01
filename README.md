@@ -20,7 +20,7 @@ Better Content is a cross-platform mobile application available on both iOS and 
 
 2. **Install Express**: Run the following command to install Express:
 
-  ```bash
+```bash
 npm install express –save
   ```
 
@@ -46,21 +46,21 @@ npx localtunnel -p 4000 -s openai
 
 2. **Install Expo CLI**: Run the following command to install Expo CLI:
 
-    ```bash
-    npm install -g expo-cli
+```bash
+npm install -g expo-cli
 ```
 
 3. **About Firebase**: Create your Firebase project in the Firebase official site firstly. Run the following command to install Firebase:
 
-    ```bash
-    npm install --save firebase
-```
-
-    ```bash
+```bash
 npm install --save firebase
 ```
 
-    ```bash
+```bash
+npm install --save firebase
+```
+
+```bash
 firebase login
  ```
 
@@ -88,8 +88,8 @@ firebase login
 2. Scan the QR code shown in the terminal window if you are using android system. If you are using the iOS system, you need to open this project in the VS Code, install all the extensions about Expo CLI, then the TERMINAL to run the following command, then you can use your iOS device to scan the QR code to use the App.
 
 ```bash
-    npx expo start
-    ```
+npx expo start
+```
 
 3. Test the app on your phone.
 
