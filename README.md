@@ -20,23 +20,23 @@ Better Content is a cross-platform mobile application available on both iOS and 
 
 2. **Install Express**: Run the following command to install Express:
 
-```bash
-npm install express –save
-  ```
+    ```bash
+    npm install express –save
+    ```
 
 3. **Configure File ‘.env’**: Replace ‘OPAI_CREDENTIALS’ with your own OpenAI API key.
 
 4. **Start Server**: Run the following command to start server:
 
- ```bash
-npm start
-  ```
+    ```bash
+    npm start
+    ```
 
 5. **Public the Server**: Navigate to ‘BetterContent\Backend\OpenAI-Services\node_modules\mime-db’ :
 
-```bash
-npx localtunnel -p 4000 -s openai
-```
+    ```bash
+    npx localtunnel -p 4000 -s openai
+    ```
 
 ## Setting Up Frontend
 
@@ -46,35 +46,37 @@ npx localtunnel -p 4000 -s openai
 
 2. **Install Expo CLI**: Run the following command to install Expo CLI:
 
-```bash
-npm install -g expo-cli
-```
+    ```bash
+    npm install -g expo-cli
+    ```
 
 3. **About Firebase**: Create your Firebase project in the Firebase official site firstly. Run the following command to install Firebase:
 
-```bash
-npm install --save firebase
-```
-
-```bash
-npm install --save firebase
-```
-
-```bash
-firebase login
- ```
+    ```bash
+    npm install --save firebase
+    ```
+  
+    ```bash
+    npm install --save firebase
+    ```
+  
+    ```bash
+    firebase login
+    ```
 
 4. **About Firebase Configure**: Go to the  `BetterContent/Frontend/ imageLover/components` folder to find the ‘firebase.js’ file, change the firebaseConfig using your own keys.
 
+
 5. **Navigate to the Source Code Directory**: make sure the directory is `imageLover` where the frontend source code is located.
 
-6. **Install Dependencies**: Run the following command to install expo dependencies:
+
+7. **Install Dependencies**: Run the following command to install expo dependencies:
 
     ```bash
     npx expo install
     ```
 
-7. **Start the App Server**: Use the following command to start the server for the simulator:
+8. **Start the App Server**: Use the following command to start the server for the simulator:
 
     ```bash
     npx expo start
@@ -87,9 +89,9 @@ firebase login
 1. Download the Expo Go app on your mobile device.
 2. Scan the QR code shown in the terminal window if you are using android system. If you are using the iOS system, you need to open this project in the VS Code, install all the extensions about Expo CLI, then the TERMINAL to run the following command, then you can use your iOS device to scan the QR code to use the App.
 
-```bash
-npx expo start
-```
+    ```bash
+    npx expo start
+    ```
 
 3. Test the app on your phone.
 
