@@ -15,18 +15,18 @@ Better Content is a cross-platform mobile application available on both iOS and 
 1. Download the source code from the `testQuiz` branch: [LoveStoryingFinalTest - testQuiz](https://github.com/mariazhou668899/LoveStoryingFinalTest/tree/testQuiz)
 
 ## Setting Up Backend
+
 1. **Install Node.js**: Node.js is required to install dependencies. Download it and install into your laptop.
 
 2. **Install Express**: Run the following command to install Express:
 
-### Setting Up the Backend Running Environment
   ```bash
 npm install express –save
   ```
 
 3. **Configure File ‘.env’**: Replace ‘OPAI_CREDENTIALS’ with your own OpenAI API key.
 
-4. **Install Express**: Run the following command to start server:
+4. **Start Server**: Run the following command to start server:
 
  ```bash
 npm start
@@ -34,14 +34,9 @@ npm start
 
 5. **Public the Server**: Navigate to ‘BetterContent\Backend\OpenAI-Services\node_modules\mime-db’ :
 
-  ```bash
+```bash
 npx localtunnel -p 4000 -s openai
 ```
-
-### Setting Up the Backend Running Environment
-  ```bash
-npm start
-  ```
 
 ## Setting Up Frontend
 
