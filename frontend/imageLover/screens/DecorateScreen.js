@@ -25,9 +25,9 @@ import MyImage from '../assets/walk_story22.gif';
 
 
 const cloudinary = new Cloudinary({
-  cloud_name: 'dnx1m3uxj',
-  api_key: '976749743917975',
-  api_secret: 'qb0qRtUBgFd6n7M4-JEwTEt46Mk'
+  cloud_name: "XXXXXXXXXXXXXXXXXXXXXXX",
+  api_key: "XXXXXXXXXXXXXXXXXXXXXXX",
+  api_secret: "XXXXXXXXXXXXXXXXXXXXXXX"
 });
 
 export default function DecorateScreen({ navigation }) {
