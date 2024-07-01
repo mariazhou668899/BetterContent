@@ -67,7 +67,10 @@ Better Content is a cross-platform mobile application available on both iOS and 
 4. **About Firebase Configure**: Go to the  `BetterContent/Frontend/ imageLover/components` folder to find the ‘firebase.js’ file, change the firebaseConfig using your own keys.
 
 
-5. **Navigate to the Source Code Directory**: make sure the directory is `imageLover` where the frontend source code is located.
+5. **About Cloudinary Configure**: Go to Configure website to create your own account and configure it. Then go to the  `BetterContent/Frontend/ imageLover/screens` folder to find the ‘DecorateScreen.js’ file, change the cloudinary configuration with your own keys.
+
+
+6. **Navigate to the Source Code Directory**: make sure the directory is `imageLover` where the frontend source code is located.
 
 
 7. **Install Dependencies**: Run the following command to install expo dependencies:
