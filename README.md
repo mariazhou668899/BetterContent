@@ -8,7 +8,7 @@ Maria Zhou (Master Student in Computer Science)
 
 Better Content is a cross-platform mobile application available on both iOS and Android. It helps users decorate their content with high-quality serial images efficiently, thanks to OpenAI's advanced capabilities. The app supports a wide range of content types, including stories, poems, introductions, and more.
 
-<div style="border: 1px solid #ccc; padding: 10px; width: 300px;">
+<div style="border: 2px solid gray; padding: 10px; width: 200px;">
   <img src="screenshots/BetterContentIntroduction.gif" alt="screenshot" style="width: 100%; height: auto;">
 </div>
 
