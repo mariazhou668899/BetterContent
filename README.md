@@ -7,7 +7,7 @@ Maria Zhou (Master Student in Computer Science)
 ## App Showing
 
 <div style="border: 5px solid #888; width: 200px; max-width: 25%; margin-left: 100px; padding: 10px;">
-  <img src="screenshots/BetterContentIntroduction.gif" alt="screenshot" style="width: 50%; height: auto;">
+  <img src="screenshots/BetterContentIntroduction.gif" alt="screenshot" style="width: 25%; height: auto;">
 </div>
 
 ## Introduction
