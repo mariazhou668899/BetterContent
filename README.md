@@ -29,7 +29,7 @@ Better Content is a cross-platform mobile application available on both iOS and 
 
 5. **Easy File Management**: Users can easily save, delete, and share files locally.
 
-6. **State Management**: If interrupted, the text input or decoration style setting is preserved after app reloading.
+6. **State Management**:  If interrupted, the text input or decoration style setting is preserved after app reloading, utilizing async-storage, which is a local storage solution in React Native for persisting data asynchronously across app restarts.
 
 7. **Amazing UI**:
    - Use Canva to create a set of background GIFs or images, enhancing visualization.
