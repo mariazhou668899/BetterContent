@@ -82,14 +82,7 @@ Better Content is a cross-platform mobile application available on both iOS and 
     ```bash
     npm install --save firebase
     ```
-  
-    ```bash
-    npm install --save firebase
-    ```
-  
-    ```bash
-    firebase login
-    ```
+    
 
 4. **About Firebase Configure**: Go to the  `BetterContent/Frontend/ imageLover/components` folder to find the ‘firebase.js’ file, change the firebaseConfig using your own keys.
 
