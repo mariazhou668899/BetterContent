@@ -16,7 +16,7 @@ Better Content is a cross-platform mobile application available on both iOS and 
 
 ## Key Features:
 
-1. **Effortless Decoration**: Automatically enhance your content with relevant, high-quality images by calling a backend public server, encapsulating OpenAI's “gpt-3.5-turbo-instruct” and “dall-e-2” APIs.
+1. **Effortless Decoration**: Automatically enhance content with relevant, high-quality images by calling a backend public server, encapsulating OpenAI's “gpt-3.5-turbo-instruct” and “dall-e-2” APIs. Users just need to upload .txt / .docx files, or copy text into the content field and click the "Better Content" button. 
 
 2. **Robust Security**: 
    - Public server encapsulates OpenAI APIs, using trained prompts to provide high-quality decoration images.
