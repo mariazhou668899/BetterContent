@@ -24,11 +24,11 @@ import MyImage from '../assets/walk_story22.gif';
 
 
 
-const cloudinary = new Cloudinary({
-  cloud_name: "XXXXXXXXXXXXXXXXXXXXXXX",
-  api_key: "XXXXXXXXXXXXXXXXXXXXXXX",
-  api_secret: "XXXXXXXXXXXXXXXXXXXXXXX"
-});
+//..............................................
+// Delete to avoid copying
+//..............................................
+
+
 
 export default function DecorateScreen({ navigation }) {
   const [inputText, setInputText] = useState('');
@@ -166,29 +166,15 @@ export default function DecorateScreen({ navigation }) {
 //=================   illustrate functions    ======================
   
 const handleStoryPromptChange = (text) => {
-  //const isValidInput = text === '' || /^[a-zA-Z\s.,!?'"’@#\-]+$/.test(text);
-  isValidInput = true
-  if (isValidInput) {
-    setInputText(text);
-  } else {
-    Alert.alert(
-      'Invalid Input',
-      'Only English words and common punctuation marks are allowed in the story prompt.'
-    );
-  }
+//..............................................
+// Delete to avoid copying
+//..............................................
 };
 
 const handleTitlePromptChange = (text) => {
-  //const isValidInput = text === '' || /^[a-zA-Z\s.,!?'"’@#\-]+$/.test(text);
-  isValidInput = true
-  if (isValidInput) {
-    setInputTitle(text);
-  } else {
-    Alert.alert(
-      'Invalid Input',
-      'Only English words and common punctuation marks are allowed in the title.'
-    );
-  }
+//..............................................
+// Delete to avoid copying
+//..............................................
 };
 
 
@@ -199,23 +185,9 @@ const handleTitlePromptChange = (text) => {
       // //const permission = await FileSystem.StorageAccessFramework.requestDirectoryPermissionsAsync();
       // const permission = await Permissions.askAsync(Permissions.MEDIA_LIBRARY);
 
-      const result = await DocumentPicker.getDocumentAsync({
-        type: 'text/plain'
-      });
-
-      console.log("Result:", result);
-
-      //fileContent = '';
-      if (result) {
-        const fileUri = result.assets[0].uri;
-        const fileContent = await FileSystem.readAsStringAsync(fileUri);
-        setInputText(fileContent); // Set inputText state with file contents
-
-        //let fileContent = atob(fileUri.split(',')[1]);
-        //setInputText(fileContent);
-      } else {
-        console.log('Document picking cancelled or failed.');
-      }
+      //..............................................
+      // Delete to avoid copying
+      //..............................................
 
     } catch (error) {
       console.error('Error loading file:', error);
@@ -239,21 +211,10 @@ const handleTitlePromptChange = (text) => {
   const MakeupStory = async () => {
   try {
     setLoading(true);
-    const storyPrompt = Machiery.createStoryPrompt(inputText);
-    const storyResponse = await OpenAIServices.textCompletion(storyPrompt, 500, 0.5, 0.5, 0, 0, 'gpt-3.5-turbo-instruct');
-    const responseData = await storyResponse.json();
-    const storySummary = responseData.text;
 
-
-    // Split the story content into paragraphs more accurately
-    const storyTextContent = inputText.split('\n').filter(paragraph => paragraph.trim() !== '');
-
-
-    let imageNumber = storyTextContent.length < 5 ? storyTextContent.length : 5;
-
-    const imgPrompt = Machiery.createImagePrompt(storySummary, imageType);
-    const imageResponse = await OpenAIServices.imageGeneration(imgPrompt, imageNumber);
-    const imageData = await imageResponse.json();
+    //..............................................
+// Delete to avoid copying
+//..............................................
 
     const generatedImageURLs = [];
 
