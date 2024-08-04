@@ -32,19 +32,8 @@ router.post('/completions/3.0', async (req, res) => {
         } else {
             const url = OPAI_BASE_URL + '/completions';
 
-			
-            var options = {
-                headers: { 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${OPAI_CREDENTIALS}` }
-            }
-			
-            const apiRes = await needle('post', url, apiBody, options)
-			
-			console.log('after - API Request body:', apiRes.body)
-			
-            const apiResText = apiRes.body.choices[0].text;
-			
-            res.status(200).json({"text": apiResText})
+....................................................................................	
+
         }
     } catch (error) {
         console.log(error)
