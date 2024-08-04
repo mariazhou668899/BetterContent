@@ -67,14 +67,9 @@ export default function ContentCenter({ navigation }) {
       return false;
     }
 
-    const localStoryMap = new Map(localStories.map(story => [story.id, story]));
-    const firestoreStoryMap = new Map(firestoreStories.map(story => [story.id, story]));
-
-    for (let id of localStoryMap.keys()) {
-      if (!firestoreStoryMap.has(id)) {
-        return false;
-      }
-    }
+//..............................................
+// Delete to avoid copying
+//..............................................
 
     return true;
   };
@@ -95,37 +90,17 @@ export default function ContentCenter({ navigation }) {
         text: 'Cancel',
         style: 'cancel',
       },
-      {
-        text: 'OK',
-        onPress: async () => {
-          try {
-            const updatedStories = [...stories];
-            updatedStories.splice(index, 1);
-            setStories(updatedStories);
-            await saveStoriesToLocal(updatedStories);
-
-            const docRef = doc(db, 'stories', item.id);
-            await deleteDoc(docRef);
-
-            Alert.alert('Success', 'Story deleted successfully!');
-          } catch (error) {
-            console.error('Error deleting story:', error);
-            Alert.alert('Error', 'Failed to delete story.');
-          }
-        },
+//..............................................
+// Delete to avoid copying
+//..............................................
       },
     ]);
   };
 
   const printAndSharePDF = async (storyData) => {
-    try {
-      const htmlContent = generateHTMLContent(storyData);
-      const { uri } = await Print.printToFileAsync({ html: htmlContent });
-      await shareAsync(uri, { UTI: '.pdf', mimeType: 'application/pdf' });
-    } catch (error) {
-      console.error('Error printing or sharing PDF:', error);
-      // Handle errors appropriately
-    }
+//..............................................
+// Delete to avoid copying
+//..............................................
   };
 
   const handleShareStory = (storyData) => {
