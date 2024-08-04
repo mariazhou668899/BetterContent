@@ -32,23 +32,9 @@ const ViewContent = ({ route }) => {
         style: 'cancel',
       },
       {
-        text: 'OK',
-        onPress: async () => {
-          try {
-            const updatedStories = [...stories];
-            updatedStories.splice(index, 1);
-            await saveStoriesToLocal(updatedStories);
-
-            const docRef = doc(db, 'stories', storyData.id);
-            await deleteDoc(docRef);
-
-            Alert.alert('Success', 'Story deleted successfully!');
-            // Optionally navigate back or perform other actions after deletion
-          } catch (error) {
-            console.error('Error deleting story:', error);
-            Alert.alert('Error', 'Failed to delete story.');
-          }
-        },
+//..............................................
+// Delete to avoid copying
+//..............................................
       },
     ]);
   };
@@ -68,17 +54,9 @@ const ViewContent = ({ route }) => {
   }
 
   const printAndSharePDF = async (storyData) => {
-    try {
-      const htmlContent = generateHTMLContent(storyData);
-
-      const { uri } = await Print.printToFileAsync({ html: htmlContent });
-
-      console.log('File has been saved to:', uri);
-
-      await shareAsync(uri, { UTI: '.pdf', mimeType: 'application/pdf' });
-    } catch (error) {
-      console.error('Error printing or sharing PDF:', error);
-    }
+//..............................................
+// Delete to avoid copying
+//..............................................
   };
 
   const handleShareStory = () => {
