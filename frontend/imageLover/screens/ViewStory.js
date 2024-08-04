@@ -17,45 +17,15 @@ const ViewStory = ({ route }) => {
   const { storyData } = route.params;
   const [firebaseId, setFirebaseId] = useState(null);
 
-  useEffect(() => {
-    const curUser = auth.currentUser.uid;
-    console.log("Logged in user: ", curUser);
-  }, []);
-
-  const backupToFirebase = async (storyData) => {
-    try {
-      const docRef = await addDoc(collection(db, 'stories'), {
-        createTime: storyData.createTime,
-        genre: storyData.genre,
-        title: storyData.title,
-        summary: storyData.summary,
-        images: storyData.images,
-        storyContent: storyData.storyContent,
-        userId: auth.currentUser.uid
-      });
-
-      console.log('Document written with ID: ', docRef.id);
-      setFirebaseId(docRef.id);
-      return docRef.id;
-    } catch (error) {
-      console.error('Error saving story to Firestore: ', error);
-      Alert.alert('Error', 'Failed to save story to content center.');
-      throw error;
-    }
-  };
+//..............................................
+// Delete to avoid copying
+//..............................................
 
   const saveToContent = async (storyData) => {
     try {
-      const path = `${FileSystem.documentDirectory}generated_stories.json`;
-
-      const fileInfo = await FileSystem.getInfoAsync(path);
-      let storiesArray = [];
-
-      if (fileInfo.exists) {
-        const fileData = await FileSystem.readAsStringAsync(path);
-        storiesArray = JSON.parse(fileData) || [];
-        //console.log("viewstory -- storiesArray: ", storiesArray)
-      }
+//..............................................
+// Delete to avoid copying
+//..............................................
 
       const newStory = { ...storyData, id: null };
 
@@ -86,15 +56,9 @@ const ViewStory = ({ route }) => {
   };
 
   const printAndSharePDF = async (storyData) => {
-    try {
-      const htmlContent = generateHTMLContent(storyData);
-      const { uri } = await Print.printToFileAsync({ html: htmlContent });
-
-      console.log('File has been saved to:', uri);
-      await shareAsync(uri, { UTI: '.pdf', mimeType: 'application/pdf' });
-    } catch (error) {
-      console.error('Error printing or sharing PDF:', error);
-    }
+//..............................................
+// Delete to avoid copying
+//..............................................
   };
 
   const handleSaveStory = () => {
