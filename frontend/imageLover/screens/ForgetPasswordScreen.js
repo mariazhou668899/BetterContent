@@ -12,12 +12,9 @@ const ForgetPasswordScreen = ({ navigation }) => {
   const [message, setMessage] = useState('');
 
   const handlePasswordReset = async () => {
-    try {
-      await sendPasswordResetEmail(auth, email);
-      setMessage('Password reset link sent to your email.');
-    } catch (error) {
-      setMessage(error.message);
-    }
+//..............................................
+// Delete to avoid copying
+//..............................................
   };
 
   return (
